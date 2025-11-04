@@ -37,3 +37,12 @@ header {
     color: white;
   }
 }
+
+footer {
+  background-image: url(./img/footer-bg.jpg);
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 3rem 0;
+}
