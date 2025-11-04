@@ -14,7 +14,7 @@ header {
   .nav-link:hover {
     color: #1266f1;
     text-decoration: underline;
-    text-underline-offset: 55px;
+    text-underline-offset: 51px;
     text-decoration-thickness: 5px;
   }
 }
@@ -25,4 +25,15 @@ header {
   color: white;
   padding: 2rem 0;
   font-size: 25px;
+}
+
+.colLinks {
+  background-color: #1266f1;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+
+  p {
+    color: white;
+  }
 }
