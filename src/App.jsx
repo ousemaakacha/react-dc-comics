@@ -11,6 +11,15 @@ function App() {
   return (
     <>
       <Header />
+
+      <main>
+        <section class="content">
+          <div class="container align-middle">
+            <p> -- CONTENT GOES HERE --</p>
+          </div>
+        </section>
+        <section></section>
+      </main>
     </>
   );
 }

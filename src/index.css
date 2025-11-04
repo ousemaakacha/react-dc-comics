@@ -18,3 +18,11 @@ header {
     text-decoration-thickness: 5px;
   }
 }
+
+.content {
+  background-color: darkslategray;
+  min-height: 30vh;
+  color: white;
+  padding: 2rem 0;
+  font-size: 25px;
+}
