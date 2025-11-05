@@ -3,13 +3,37 @@ import MERCH from "../img/buy-comics-merchandise.png";
 import SHOP from "../img/buy-comics-shop-locator.png";
 import SUBS from "../img/buy-comics-subscriptions.png";
 import VISA from "../img/buy-dc-power-visa.svg";
+import comics from "./comics.js";
 
 export default function Main() {
   return (
     <main>
       <section class="content">
         <div class="container align-middle">
-          <p> -- CONTENT GOES HERE --</p>
+          <div>
+            <div className="container py-5  text-white">
+              <h2 className="mb-4 text-uppercase">Current Series</h2>
+
+              <div className="row">
+                {comics.map((comic) => (
+                  <div key={comic.id} className="col-md-3 mb-4">
+                    <div className="card h-100 bg-black border-0 text-center text-white">
+                      <img
+                        src={comic.thumb}
+                        className="card-img-top"
+                        alt={comic.title}
+                        style={{ height: "300px", objectFit: "cover" }}
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title">{comic.series}</h5>
+                        <p className="card-text">{comic.price}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="colLinks">
