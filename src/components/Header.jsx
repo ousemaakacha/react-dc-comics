@@ -8,7 +8,7 @@ export default function Header() {
           <img src={DCLOGO} height="90" />
 
           <div>
-            <ul class="navbar-nav d-flex gap-3 ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav d-flex gap-2 ms-auto mb-2 mb-lg-0">
               <li class="nav-item ">
                 <a class="nav-link " href="#">
                   CHARACTERS

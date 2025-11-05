@@ -39,10 +39,25 @@ header {
 }
 
 footer {
-  background-image: url(./img/footer-bg.jpg);
-  min-height: 40vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  padding: 3rem 0;
+  .upperFoot {
+    background-image: url(./img/footer-bg.jpg), url(./img/dc-logo-bg.png);
+    min-height: 30;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 3rem 0;
+  }
+  .bottomFoot {
+    height: 15vh;
+
+    .btn {
+      border-radius: 0;
+      background-color: transparent;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 20px;
+    }
+  }
 }
