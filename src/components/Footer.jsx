@@ -10,7 +10,7 @@ export default function Footer() {
       <section class="upperFoot">
         <div class="container">
           <div class="row">
-            <div class="col md-2" md={2}>
+            <div class="col-2">
               <h6>DC COMICS</h6>
               <ul class="list-unstyled ">
                 <li>Characters</li>
@@ -28,7 +28,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div class="col md-2" md={2}>
+            <div class="col-2 ">
               <h6>DC</h6>
               <ul class="list-unstyled ">
                 <li>Terms Of Use</li>
@@ -45,7 +45,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div class="col md-2" md={2}>
+            <div class="col-2">
               <h6>SITES</h6>
               <ul class="list-unstyled">
                 <li>DC</li>
@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
 
           <div class="col-6 gap-3 d-flex  justify-content-end">
-            <a class="align-self-center ">FOLLOW US</a>
+            <a class="align-self-center">FOLLOW US</a>
             <img src={FACEBOOK} />
             <img src={PERI} />
             <img src={PINT} />

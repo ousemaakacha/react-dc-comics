@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { Container, Row, Col, Nav, Button } from "react-bootstrap";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
