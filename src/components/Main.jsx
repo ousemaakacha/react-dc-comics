@@ -16,13 +16,13 @@ export default function Main() {
 
               <div className="row">
                 {comics.map((comic) => (
-                  <div key={comic.id} className="col-md-3 mb-4">
+                  <div key={comic.id} className="col-md-2 mb-4">
                     <div className="card h-100 bg-black border-0 text-center text-white">
                       <img
                         src={comic.thumb}
                         className="card-img-top"
                         alt={comic.title}
-                        style={{ height: "300px", objectFit: "cover" }}
+                        style={{ height: "150px", objectFit: "cover" }}
                       />
                       <div className="card-body">
                         <h5 className="card-title">{comic.series}</h5>
