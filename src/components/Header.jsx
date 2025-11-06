@@ -8,7 +8,7 @@ export default function Header({ menu }) {
         <div className="container">
           <img src={DCLOGO} height="90" />
 
-          <ul class="navbar-nav d-flex gap-2 ms-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav d-flex gap-2 ms-auto mb-2 mb-lg-0">
             {menu.map((item) => (
               <NavLinks key={item.id} title={item.title} />
             ))}

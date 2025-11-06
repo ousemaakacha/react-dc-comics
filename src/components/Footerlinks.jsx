@@ -1,4 +1,6 @@
-export default function NavLinks({ id, title }) {
+export default function FooterLinks({ title }) {
+  console.log(title);
+
   return (
     <li className="nav-item ">
       <a className="nav-link " href="#">

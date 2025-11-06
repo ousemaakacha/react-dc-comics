@@ -3,51 +3,41 @@ import PERI from "../img/footer-periscope.png";
 import PINT from "../img/footer-pinterest.png";
 import TWIT from "../img/footer-twitter.png";
 import YT from "../img/footer-youtube.png";
+import Dclinks from "./Dclinks";
+import FooterLinks from "./Footerlinks";
 
-export default function Footer() {
+export default function Footer({ footlinks, dclinks }) {
   return (
-    <footer class="bg-dark text-light position-relative">
-      <section class="upperFoot">
-        <div class="container">
-          <div class="row">
-            <div class="col-2">
+    <footer className="bg-dark text-light position-relative">
+      <section className="upperFoot">
+        <div className="container">
+          <div className="row">
+            <div className="col-2">
               <h6>DC COMICS</h6>
-              <ul class="list-unstyled ">
-                <li>Characters</li>
-                <li>Comics</li>
-                <li>Movies</li>
-                <li>TV</li>
-                <li>Games</li>
-                <li>Videos</li>
-                <li>News</li>
+              <ul className="list-unstyled ">
+                {footlinks.map((flink) => (
+                  <FooterLinks key={flink.id} title={flink.title} />
+                ))}
               </ul>
-              <h6 class="mt-4">SHOP</h6>
-              <ul class="list-unstyled">
+              <h6 className="mt-4">SHOP</h6>
+              <ul className="list-unstyled">
                 <li>Shop DC</li>
                 <li>Shop DC Collectibles</li>
               </ul>
             </div>
 
-            <div class="col-2 ">
+            <div className="col-2 ">
               <h6>DC</h6>
-              <ul class="list-unstyled ">
-                <li>Terms Of Use</li>
-                <li>Privacy Policy (New)</li>
-                <li>Ad Choices</li>
-                <li>Advertising</li>
-                <li>Jobs</li>
-                <li>Subscriptions</li>
-                <li>Talent Workshops</li>
-                <li>CPSC Certificates</li>
-                <li>Ratings</li>
-                <li>Shop Help</li>
-                <li>Contact Us</li>
+              <ul className="list-unstyled ">
+                {dclinks.map((dc) => (
+                  <Dclinks key={dc.id} title={dc.title} />
+                ))}
               </ul>
             </div>
 
-            <div class="col-2">
+            <div className="col-2">
               <h6>SITES</h6>
-              <ul class="list-unstyled">
+              <ul className="list-unstyled">
                 <li>DC</li>
                 <li>MAD Magazine</li>
                 <li>DC Kids</li>
@@ -58,16 +48,16 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <section class="container  bottomFoot py-5">
-        <div class="row">
-          <div class="col-6">
-            <button class="btn  btn-primary" type="button">
+      <section className="container  bottomFoot py-5">
+        <div className="row">
+          <div className="col-6">
+            <button className="btn  btn-primary" type="button">
               SIGN-UP NOW!
             </button>
           </div>
 
-          <div class="col-6 gap-3 d-flex  justify-content-end">
-            <a class="align-self-center">FOLLOW US</a>
+          <div className="col-6 gap-3 d-flex  justify-content-end">
+            <a className="align-self-center">FOLLOW US</a>
             <img src={FACEBOOK} />
             <img src={PERI} />
             <img src={PINT} />
