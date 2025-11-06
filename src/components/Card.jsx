@@ -9,7 +9,7 @@ export default function Card({ thumb, title, series, price }) {
           style={{ height: "150px", objectFit: "cover" }}
         />
         <div className="card-body">
-          <h5 className="card-title">{series}</h5>
+          <h5 className="card-title fs-5">{series}</h5>
           <p className="card-text">{price}</p>
         </div>
       </div>

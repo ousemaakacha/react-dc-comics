@@ -190,10 +190,51 @@ function App() {
       writers: ["Joëlle Jones"],
     },
   ];
+  const menu = [
+    {
+      id: 1,
+      title: "CHARACTER",
+    },
+
+    {
+      id: 2,
+      title: "COMICS",
+    },
+
+    {
+      id: 3,
+      title: "MOVIES",
+    },
+
+    {
+      id: 4,
+      title: "GAMES",
+    },
+
+    {
+      id: 5,
+      title: "COLLECTIBLES",
+    },
+
+    {
+      id: 6,
+      title: "VIDEOS",
+    },
+
+    {
+      id: 7,
+      title: "NEWS",
+    },
+
+    {
+      id: 8,
+      title: "SHOP",
+    },
+  ];
 
   return (
     <>
-      <Header />
+      <Header menu={menu} />
 
       <Main comics={comics} />
 
