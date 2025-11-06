@@ -3,9 +3,10 @@ import MERCH from "../img/buy-comics-merchandise.png";
 import SHOP from "../img/buy-comics-shop-locator.png";
 import SUBS from "../img/buy-comics-subscriptions.png";
 import VISA from "../img/buy-dc-power-visa.svg";
+import Card from "./Card.jsx";
 import comics from "./comics.js";
 
-export default function Main() {
+export default function Main({ comics }) {
   return (
     <main>
       <section class="content">
@@ -16,20 +17,13 @@ export default function Main() {
 
               <div className="row">
                 {comics.map((comic) => (
-                  <div key={comic.id} className="col-md-2 mb-4">
-                    <div className="card h-100 bg-black border-0 text-center text-white">
-                      <img
-                        src={comic.thumb}
-                        className="card-img-top"
-                        alt={comic.title}
-                        style={{ height: "150px", objectFit: "cover" }}
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title">{comic.series}</h5>
-                        <p className="card-text">{comic.price}</p>
-                      </div>
-                    </div>
-                  </div>
+                  <Card
+                    key={comic.id}
+                    thumb={comic.thumb}
+                    title={comic.title}
+                    series={comic.series}
+                    price={comic.price}
+                  />
                 ))}
               </div>
             </div>
