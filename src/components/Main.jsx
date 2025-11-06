@@ -4,12 +4,16 @@ import SHOP from "../img/buy-comics-shop-locator.png";
 import SUBS from "../img/buy-comics-subscriptions.png";
 import VISA from "../img/buy-dc-power-visa.svg";
 import Card from "./Card.jsx";
-import comics from "./comics.js";
+import JUMBO from "../img/jumbotron.jpg";
+// import comics from "./comics.js";
 
 export default function Main({ comics }) {
   return (
     <main>
-      <section class="content">
+      <section className="image-container">
+        <img className="image" src={JUMBO} />
+      </section>
+      <section class="content bg-dark">
         <div class="container align-middle">
           <div>
             <div className="container py-5  text-white">
